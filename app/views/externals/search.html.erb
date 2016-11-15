@@ -1,0 +1,11 @@
+<h1>search results</h1>
+
+<ul>
+  <h2>Results container</h2>
+</ul>
+
+<%= form_tag searchpost_path, method: :post, remote: true, id: 'searchform' do %>
+  <%= label_tag(:q, "Search for:")%>
+  <%= text_field_tag(:q)%>
+  <%= submit_tag("Search")%>
+<% end %>
